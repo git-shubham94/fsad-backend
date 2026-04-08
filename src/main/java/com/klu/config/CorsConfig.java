@@ -19,7 +19,8 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                     "http://localhost:5173",  // Vite dev server
-                    "http://localhost:3000"   // If switching to CRA
+                    "http://localhost:3000",
+                    "https://fsad-frontend-efx2.onrender.com"// If switching to CRA
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
